@@ -127,12 +127,14 @@ h1, h2, h3 {
 }
 
 iframe {
-    width: 100%;  /* Make the iframe responsive */
-    max-width: 600px;  /* Limit the max width */
-    height: 520px;
+    width: 100%;
+    max-width: 700px; /* Increased max-width for larger screens */
+    height: 600px; /* Increased height */
+    min-height: 500px; /* Ensures it looks good on smaller screens */
     border: 0;
     margin-top: 20px;
 }
+
 
 /* Responsive Design for Contact Section */
 @media (max-width: 768px) {
@@ -154,8 +156,8 @@ iframe {
     }
 
     iframe {
-        width: 100%;  /* Ensures iframe fits the screen */
-        height: auto;  /* Adjust height proportionally */
+        height: 550px;
+        min-height: 450px;
     }
 }
 
@@ -175,6 +177,10 @@ iframe {
     .social-icon {
         width: 25px;  /* Even smaller icons on very small screens */
         margin: 0 8px;
+    }
+    iframe {
+        height: 500px;
+        min-height: 400px;
     }
 }
 
